@@ -6,7 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)// comes from junit cucumber doeas not have an engine
 @CucumberOptions(features = "src\\test\\resources\\features",
-        glue ="com\\vytrack\\step_definitions",dryRun = false)
+        glue ="com\\vytrack\\step_definitions",dryRun = false,
+        tags = "@negative_test and @driver",
+        plugin = "html:target/default-cucumber-reports")
+      // tags = "@negative_test or @driver"
        // tags = " not or ~@negative_test")// checks if code implementations are done flase by default
         // ~ tilde
         // tags="~@negative_test" runs except this tag name old way
