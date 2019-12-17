@@ -1,5 +1,7 @@
 package com.vytrack.step_definitions;
 
+import com.vytrack.utilities.ConfigurationReader;
+import com.vytrack.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 
@@ -7,6 +9,7 @@ public class LoginStepDefinitions {
     @Given("user is on the login page")
     public void user_is_on_the_login_page() {
         System.out.println("i am on the login page");
+        Driver.get().get(ConfigurationReader.getProperty("url"));
 
     }
 
