@@ -17,4 +17,15 @@ Feature: Login
     Then  user logs in as sales manager
     And  user verifies that "Dashboard" page subtitle is displayed
 
+  @negative_test
+  Scenario: Verify that warning message is displayed when password is not correct
+    Given user is on the login page
+    Then user enters "storemanager85" username and "wrong" password
+    And  user verifies that "invalid user name or password." message is displayed
+
+  @negative_test
+  Scenario: Verify that warning message is displayed when username is not correct
+    Given user is on the login page
+    Then user enters "wrong" username and "UserUser123" password
+    And  user verifies that "invalid user name or password." message is displayed
 

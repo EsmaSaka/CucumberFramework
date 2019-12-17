@@ -18,19 +18,32 @@ public class LoginStepDefinitions {
 
     @Then("user verifies that {string} page subtitle is displayed")
     public void user_verifies_that_page_subtitle_is_displayed(String string) {
-        System.out.println("verifying page sun title  "+string);
+        System.out.println("verifying page sun title  " + string);
 
     }
+
     @Then("user logs in as  driver")
     public void user_logs_in_as_driver() {
 
         System.out.println("driver");
     }
+
     @Then("user logs in as sales manager")
     public void user_logs_in_as_sales_manager() {
 
         System.out.println("logged in as sales manager");
         //throw new RuntimeException("test failed");
+    }
+
+    @Then("user enters {string} username and {string} password")
+    public void user_enters_username_and_password(String string, String string2) {
+        System.out.println("Login with : " +string+"username and "+string2+"password");
+    }
+
+    @Then("user verifies that {string} message is displayed")
+    public void user_verifies_that_message_is_displayed(String string) {
+        System.out.println("verify that warning message is displayed "+string);
+
     }
 
 
