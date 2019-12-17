@@ -30,6 +30,7 @@ public class LoginStepDefinitions {
     public void user_logs_in_as_sales_manager() {
 
         System.out.println("logged in as sales manager");
+        //throw new RuntimeException("test failed");
     }
 
 
