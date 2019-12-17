@@ -10,10 +10,11 @@ public class LoginStepDefinitions {
 //        throw new cucumber.api.PendingException();
     }
 
-    @Then("user logs in as a store manager")
-    public void user_logs_in_as_a_store_manager() {
-        System.out.println("login as store manager");
-      //  throw new cucumber.api.PendingException();
+    @Then("user logs in as  store manager")
+    public void user_logs_in_as_store_manager() {
+        // Write code here that turns the phrase above into concrete actions
+       // throw new cucumber.api.PendingException();
+        System.out.println("store Manager");
     }
 
     @Then("user verifies that {string} page subtitle is displayed")
@@ -21,8 +22,21 @@ public class LoginStepDefinitions {
         System.out.println("verifying page sun title"+string);
      //   throw new cucumber.api.PendingException();
     }
+    @Then("user logs in as  driver")
+    public void user_logs_in_as_driver() {
+        // Write code here that turns the phrase above into concrete actions
+      //  throw new cucumber.api.PendingException();
+        System.out.println("driver");
+    }
+    @Then("user logs in as sales manager")
+    public void user_logs_in_as_sales_manager() {
+        // Write code here that turns the phrase above into concrete actions
+       // throw new cucumber.api.PendingException();
+        System.out.println("logged in as sales manager");
+    }
 
 
 
 
-}
+
+    }
